@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--inter-font), sans-serif;
-  font-variation-settings: var(--font-normal);
+  font-variation-settings: "wght" 400;
   display: flex;
   gap: 100px;
   flex-direction: column;
@@ -22,10 +22,7 @@
   background-image: 
   repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
   repeating-linear-gradient(0deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
-  linear-gradient(#E7E7E7 50.01%, #1A1A1A);
-    /* linear-gradient(#E7E7E7, #1A1A1A),
-    linear-gradient(transparent 60%, rgb(220 20 60 / 0.6) 60%), 
-    linear-gradient(90deg, transparent 60%, rgb(220 20 60 / 0.6) 60%)*/
+  linear-gradient(#E7E7E7 0.01%, #1A1A1A);
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -69,7 +66,7 @@
 }
 
 .main-title {
-  font-weight: var(--font-bold);
+  font-variation-settings: "wght" 700;
   font-size: 18px;
   padding: 5px 10px;
 }
@@ -135,7 +132,7 @@
 }
 
 .card-image-saturate {
-  filter: saturate(500%);
+  filter: saturate(135%);
 }
 
 .card-image-hue-rotate {
@@ -143,11 +140,11 @@
 }
 
 .card-image-invert {
-  filter: invert(80%);
+  filter: invert(15%);
 }
 
 .card-image-sepia {
-  filter: sepia(0.9);
+  filter: sepia(0.5);
 }
 
 .card-image-blur {
@@ -155,7 +152,7 @@
 }
 
 .card-image-contrast {
-  filter: contrast(250%);
+  filter: contrast(90%) brightness(110%);
 }
 
 .card-text {
@@ -361,6 +358,7 @@
 
 .button-image {
   block-size: 21px;
+  inline-size: 21px;
   mix-blend-mode: difference;
   color: #fff;
 }
@@ -368,6 +366,7 @@
 @media (width <= 375px) {
   .button-image {
   block-size: 28px;
+  inline-size: 28px;
   }
 }
 
@@ -380,7 +379,7 @@
 
 @media (width <= 375px) {
   .dialog {
-  padding: 42px 30px;
+  padding: 42px 20px;
   inline-size: 341px;
   }
 }
@@ -405,7 +404,8 @@
 }
 
 .dialog-image {
-  inline-size: 110px;
+  inline-size: 87px;
+  block-size: 39px;
 }
 
 .dialog-text {
