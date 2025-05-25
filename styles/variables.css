@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --inter-font: 'Inter-Variable';
-  --dendy-font: 'PressStart2P-Regular';
+  --main-font: 'Inter-Variable';
+  --dendy-font: 'PressStart2P';
   --font-normal: 400;
   --font-bold: 700;
   --stroke-color: #fff;
